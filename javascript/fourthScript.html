@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>terinary and type of operator</title>
+</head>
+<body onload=start();>
+	<script type="text/javascript">
+		str1 = "th"
+		num1 = 15
+		num2 = 35
+
+		function checkType(){
+			if(typeof str1 == "string"){
+				document.write("type of str1 is String<br/>");
+			}
+			else if(typeof str1 == "number"){
+				document.write("type of str1 is numeric<br/>");
+			}
+			else if(typeof str1 == "boolean"){
+				document.write("type of str1 is boolean<br/>");
+			}
+			else if(typeof str1 == "object"){
+				document.write("type of str1 is object<br/>");
+			}
+			else if(typeof str1 == "function"){
+				document.write("type of str1 is function<br/>");
+			}
+			else if(typeof str1 == "undefined"){
+				document.write("type of str1 is undefined<br/>");
+			}
+			else{
+				document.write("Error<br/>");
+			}
+		}
+		function useTerinaryOperator(){
+			num3 = 15 + 35;
+			num3 == 50 ? document.write("true"):document.write("false")
+		}
+		function start(){
+			checkType();
+			useTerinaryOperator();
+		}
+	</script>
+</body>
+</html>
