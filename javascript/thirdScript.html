@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scope testing</title>
+</head>
+<body onload=start();>
+	<script type="text/javascript">
+		var str1 = "hey toph!";
+		function scopeTest(){
+			var str1 = "wait you're not Toph?!?!?!";
+			document.writeln("<br/><br/>scopeTest<br/>" + str1);
+		}
+		function scopeTest2(){
+			document.write("scopeTest2<br/>" + str1);
+		}
+		function start(){
+			scopeTest2();
+			scopeTest();
+		}
+	</script>
+</body>
+</html>
