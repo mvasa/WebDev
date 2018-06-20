@@ -34,11 +34,17 @@
 		}
 		function useTerinaryOperator(){
 			num3 = 15 + 35;
-			num3 == 50 ? document.write("true"):document.write("false")
+			num3 == 50 ? document.write("true<br/>"):document.write("false<br/>")
 		}
+		function forInLoop(){
+			for(var property in navigator){
+				document.write(property + "<br/>");
+			}
+		} 
 		function start(){
 			checkType();
 			useTerinaryOperator();
+			forInLoop();
 		}
 	</script>
 </body>
